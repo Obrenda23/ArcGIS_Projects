@@ -145,9 +145,9 @@ ArcGIS_Projects/
 │
 ├── README.md
 ├── LICENSE
-├── watershed_map1.jpg
-├── watershed_map1.pdf
 └── watershed_projects/
+    ├── watershed_map1.jpg
+    └── watershed_map1.pdf
 ```
 
 ---
