@@ -161,7 +161,7 @@ This map visualizes:
 - Hydrological stations
 - Meteorological stations
 
-*(Insert map screenshot here)*
+
 
 ---
 
