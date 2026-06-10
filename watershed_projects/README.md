@@ -8,17 +8,17 @@ The analysis integrates elevation data, river networks, hydrological stations, a
 
 ---
 
-## Project Output
+## 🗺️ Project Output
 
 ### Watershed Elevation and Sub-Catchment Map
 
-The map below displays the delineated watershed, sub-catchment boundaries, elevation distribution, river network, hydrological stations, and meteorological stations.
+This map displays the delineated watershed, sub-catchment boundaries, elevation distribution, river network, hydrological stations, and meteorological stations.
 
-<p align="center">
-  <img src="watershed_projects/watershed_map1.jpg" alt="Watershed Elevation and Sub-Catchment Map" width="1000">
-</p>
+![Watershed Elevation and Sub-Catchment Map](watershed_projects/watershed_map1.jpg)
 
 *Figure 1. Watershed elevation map showing sub-catchments, river network, hydrological stations, and meteorological stations.*
+
+---
 ## Project Objectives
 
 - Delineate watershed and sub-catchment boundaries from elevation data.
