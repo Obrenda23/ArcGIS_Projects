@@ -1,46 +1,59 @@
 # Watershed Elevation and Sub-Catchment Analysis
 
-## Project Overview
+## Overview
 
-This project demonstrates a watershed delineation and terrain analysis workflow completed using ArcGIS Pro. The study area was divided into ten sub-catchments to support hydrological assessment, water resource management, and environmental analysis.
+This project demonstrates a complete watershed delineation and terrain analysis workflow developed in **ArcGIS Pro**. Using a Digital Elevation Model (DEM), the watershed was delineated into ten sub-catchments to support hydrological assessment, environmental monitoring, and water resource management.
 
-The project integrates elevation data, river networks, hydrological stations, and meteorological stations to visualize watershed characteristics and support spatial decision-making.
+The analysis integrates elevation data, river networks, hydrological stations, and meteorological stations to visualize watershed characteristics and support spatial decision-making.
+
+---
+
+## Project Output
+
+### Watershed Elevation and Sub-Catchment Map
+
+The map below displays the delineated watershed, sub-catchment boundaries, elevation distribution, river network, hydrological stations, and meteorological stations.
+
+<p align="center">
+  <a href="watershed_projects/watershed_map1.pdf">
+    <img src="watershed_projects/watershed_map1.jpg" alt="Watershed Elevation and Sub-Catchment Map" width="900">
+  </a>
+</p>
+
+<p align="center">
+  <em>Click the map to view the full-resolution PDF version.</em>
+</p>
 
 ---
 
 ## Project Objectives
 
-- Delineate watershed and sub-catchment boundaries.
-- Analyze topographic variation using a Digital Elevation Model (DEM).
-- Visualize river networks and drainage patterns.
+- Delineate watershed and sub-catchment boundaries from elevation data.
+- Analyze terrain variation across the watershed.
+- Extract and visualize drainage networks.
 - Map hydrological and meteorological monitoring stations.
-- Support hydrological and environmental planning through geospatial analysis.
-
----
-
-## Study Area
-
-The watershed was subdivided into ten sub-catchments (WS1–WS10) for detailed analysis. Elevation across the study area ranges from approximately **1,504 m to 3,220 m**, highlighting significant terrain variation that influences hydrological processes.
+- Produce cartographic outputs for environmental planning and water resource management.
 
 ---
 
 ## Data Used
 
-### Spatial Data
+### Input Data
+
 - Digital Elevation Model (DEM)
-- Watershed boundaries
+- Watershed boundary data
 - River network data
 - Hydrological station locations
 - Meteorological station locations
-- Administrative boundaries
 
-### Derived Data
+### Derived Products
+
 - Flow Direction Raster
 - Flow Accumulation Raster
 - Stream Network
 - Watershed Boundaries
 - Sub-Catchment Boundaries
-- Elevation Classes
+- Elevation Classification Map
 
 ---
 
@@ -55,47 +68,52 @@ The watershed was subdivided into ten sub-catchments (WS1–WS10) for detailed a
 
 ## Methodology
 
-### 1. DEM Preparation
-The Digital Elevation Model was processed and checked for sinks and irregularities.
+### 1. DEM Processing
 
-### 2. Hydrological Processing
-Hydrological tools were used to:
-- Fill sinks
+The DEM was preprocessed to remove sinks and ensure hydrologic consistency.
+
+### 2. Hydrological Analysis
+
+Hydrological tools were applied to:
+
 - Generate flow direction
 - Calculate flow accumulation
 - Extract stream networks
+- Define watershed outlets
 
 ### 3. Watershed Delineation
-Pour points were defined and used to delineate watershed and sub-catchment boundaries.
+
+Watershed and sub-catchment boundaries were delineated from the generated drainage network and outlet locations.
 
 ### 4. Terrain Analysis
-Elevation values were classified into multiple categories to visualize topographic variation across the watershed.
+
+Elevation values were classified into multiple ranges to visualize topographic variation throughout the watershed.
 
 ### 5. Cartographic Design
-The final map was designed using:
-- Elevation color gradients
+
+The final map layout was created using:
+
+- Elevation symbology
 - River network overlays
-- Watershed boundaries
-- Monitoring station symbols
+- Sub-catchment boundaries
+- Hydrological station symbols
+- Meteorological station symbols
 - Scale bar, north arrow, and legend
 
 ---
 
-## Results
+## Key Results
 
-The final map illustrates:
-
-- Ten delineated sub-catchments (WS1–WS10)
-- Elevation distribution across the watershed
-- River network connectivity
-- Hydrological monitoring stations
-- Meteorological monitoring stations
-- Area statistics for each sub-catchment
+- Delineated **10 sub-catchments (WS1–WS10)**.
+- Mapped elevation ranging from approximately **1,504 m to 3,220 m**.
+- Visualized watershed drainage patterns and river connectivity.
+- Integrated hydrological and meteorological monitoring stations.
+- Produced a professional cartographic map for hydrological analysis and decision support.
 
 ### Sub-Catchment Areas
 
 | Sub-Catchment | Area (Ha) |
-|--------------|-----------:|
+|--------------|----------:|
 | WS1 | 17,565 |
 | WS2 | 46,245 |
 | WS3 | 20,384 |
@@ -109,16 +127,16 @@ The final map illustrates:
 
 ---
 
-## Key GIS Skills Demonstrated
+## GIS Skills Demonstrated
 
 - Watershed Delineation
 - Hydrological Modeling
-- Terrain Analysis
 - DEM Processing
+- Terrain Analysis
 - Spatial Analysis
 - Geoprocessing
-- Environmental Mapping
 - Cartographic Design
+- Environmental Mapping
 - Data Visualization
 - ArcGIS Pro Workflow Development
 
@@ -127,54 +145,27 @@ The final map illustrates:
 ## Repository Structure
 
 ```text
-Watershed_Elevation_Analysis/
+ArcGIS_Projects/
 │
-├── Maps/
-│   └── Watershed_Elevation_Map.pdf
+├── README.md
 │
-├── Data/
-│   ├── DEM/
-│   ├── Rivers/
-│   ├── Watersheds/
-│   └── Stations/
-│
-├── ArcGIS_Project/
-│   └── Watershed_Analysis.aprx
-│
-├── Outputs/
-│   ├── Watershed_Map.jpg
-│   └── SubCatchment_Statistics.csv
-│
-└── README.md
+└── watershed_projects/
+    ├── watershed_map1.jpg
+    └── watershed_map1.pdf
 ```
-
----
-
-## Sample Output
-
-### Elevation Map of Sub-Catchments
-
-This map visualizes:
-- Watershed topography
-- Sub-catchment boundaries
-- River networks
-- Hydrological stations
-- Meteorological stations
-
-
 
 ---
 
 ## Applications
 
-This project can support:
+This workflow can support:
 
-- Watershed management
-- Flood risk assessment
-- Water resource planning
-- Environmental monitoring
-- Hydrological research
-- Land-use planning
+- Watershed Management
+- Flood Risk Assessment
+- Water Resource Planning
+- Environmental Monitoring
+- Hydrological Research
+- Sustainable Land Management
 
 ---
 
@@ -182,16 +173,16 @@ This project can support:
 
 **Brenda Ongera**
 
-M.S. Applied Geospatial Science  
-Bowling Green State University
+M.S. Applied Geospatial Science | Bowling Green State University
 
 ### Research Interests
-- GIS
+
+- GIS and Spatial Analysis
 - Remote Sensing
 - Environmental Monitoring
 - Landscape Ecology
-- Hydrological Analysis
-- Land Use/Land Cover Change
+- Hydrology
+- Land Use and Land Cover Change
 
 ---
 
